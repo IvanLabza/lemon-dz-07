@@ -39,7 +39,7 @@
     padding: 10px 0;
 }
 
-.conteiner {}
+
 
 .head-nav {
     display: flex;
@@ -101,13 +101,14 @@
 }
 
 
-.head-list-item {}
+
 
 .head-list-link {
     color: #FFF;
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
+    translate: all 0.25s ease-in-out;
 }
 
 .head-list {
@@ -125,6 +126,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.head-list-link:is(:hover,:focus){
+    color:orange;
 }
 
 .hero-title {
@@ -172,6 +177,12 @@
     background-color: #5C62EC;
     margin-top: 10px;
     outline: transparent;
+    translate: all 1500ms ease-in-out;
+}
+
+.hero-btn:is(:hover,:focus){
+    background-color: blue;
+    
 }
 
 .projeckt {
@@ -208,7 +219,7 @@
     max-width: 300px;
 }
 
-.projeckt-list-img {}
+
 
 .projeckt-list-title {
     padding: 15px 25px 20px;
@@ -227,11 +238,6 @@
     gap: 15px;
 }
 
-.ftr-list-item {}
-
-.ftr-list-link {}
-
-.ftr-list-svg {}
 
 .ftr-text {
     margin-top: 15px;
